@@ -1,0 +1,11 @@
+$theme-colors: (
+  "primary": #0074d9,
+  "danger": #ff4136
+); 
+
+/* The following line can be included in a src/App.scss */
+
+@import "bootstrap/scss/bootstrap";
+@import "bootstrap";
+
+/* The following line can be included in your src/index.js or App.js file */
