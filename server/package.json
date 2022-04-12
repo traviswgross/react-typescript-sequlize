@@ -1,0 +1,31 @@
+{
+  "name": "node-express-sequelize",
+  "version": "1.0.0",
+  "description": "sequlize orm with node and express",
+  "main": "index.js",
+  "dependencies": {
+    "bluebird": "^3.7.2",
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.17.0",
+    "sqlite3": "^5.0.2"
+  },
+  "devDependencies": {
+    "babel-register": "^6.26.0",
+    "sequelize-cli": "^6.4.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "rest",
+    "api",
+    "sequlize",
+    "sqlite"
+  ],
+  "author": "Travis Gross",
+  "license": "ISC"
+}
