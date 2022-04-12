@@ -5,14 +5,14 @@ module.exports = {
     await queryInterface.createTable('Accounts', {
       id: {
         type: Sequelize.INTEGER,
-        allowNull: false,
+        // allowNull: false,
         autoIncrement: true,
         primaryKey: true
       },
       locationId: {
-        type: Sequelize.STRING
+        type: Sequelize.INTEGER
       },
-      number: { type: Sequelize.INTEGER },
+      number: { type: Sequelize.STRING },
       service: { type: Sequelize.STRING },
     }, {
       timestamps: false

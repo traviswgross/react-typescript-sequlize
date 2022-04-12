@@ -3,10 +3,10 @@ module.exports = {
   async up(queryInterface, Sequelize) {
     await queryInterface.createTable('Locations', {
       id: {
-        allowNull: false,
+        type: Sequelize.INTEGER,
+        // allowNull: false,
         autoIncrement: true,
-        primaryKey: true,
-        type: Sequelize.INTEGER
+        primaryKey: true
       },
       address: {
         type: Sequelize.STRING
@@ -22,7 +22,11 @@ module.exports = {
       },
       sqft: {
         type: Sequelize.INTEGER
-      }
+      },
+
+    }, {
+
+      timestamps: false
     });
   },
   async down(queryInterface, Sequelize) {

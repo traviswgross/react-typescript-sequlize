@@ -11,13 +11,13 @@ Account.init({
           primaryKey: true
      },
      locationId: {
-          type: DataTypes.STRING,
+          type: DataTypes.INTEGER,
           references: {
                model: Location,
                key: 'id'
           }
      },
-     number: DataTypes.INTEGER,
+     number: DataTypes.STRING,
      service: DataTypes.STRING,
 }, {
      timestamps: false,
