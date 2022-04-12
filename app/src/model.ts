@@ -4,7 +4,6 @@ const uid: string = uuid();
 
 export default interface ILocation {
     id?: number;
-    uuid?: typeof uid;
     address?: string;
     city?: string;
     state?: string;
@@ -14,7 +13,6 @@ export default interface ILocation {
 
 export interface IAccount {
     id?: number;
-    uuid?: typeof uid;
     locationId?: number;
     number: string;
     service: string;// "water" | "electric" | "natural_gas";
